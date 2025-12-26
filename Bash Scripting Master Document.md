@@ -1,48 +1,134 @@
 ## TABLE OF CONTENTS
 
-**PART I — FOUNDATIONS**
+## **PART I — FOUNDATIONS**
 
-1. Introduction to Bash Scripting 1.1 What Bash Is and Where It Is Used 1.2 Bash vs Shell vs Other Interpreters 1.3 Script Execution Lifecycle
-2. Linux Shell Fundamentals 2.1 Shell Environment 2.2 Shell Initialization Files 2.3 PATH and Environment Variables
+## 1. Introduction to Bash Scripting 
+1. 1.1 What Bash Is and Where It Is Used 
+2. 1.2 Bash vs Shell vs Other Interpreters 
+3. 1.3 Script Execution Lifecycle
+## 2. Linux Shell Fundamentals 
+1. 2.1 Shell Environment 
+2. 2.2 Shell Initialization Files 
+3. 2.3 PATH and Environment Variables
 
-**PART II — CORE BASH CONCEPTS** 3. Script Structure and Execution 3.1 Shebang Line 3.2 Script Permissions 3.3 Running Scripts Safely
+## **PART II — CORE BASH CONCEPTS** 
+## 3. Script Structure and Execution 
+3. 3.1 Shebang Line 
+4. 3.2 Script Permissions 
+5. 3.3 Running Scripts Safely 
+## 4. Variables and Data Types 
+3. 4.1 Variable Declaration and Scope 
+4. 4.2 Quoting Rules 
+5. 4.3 Command Substitution 
+6. 4.4 Environment Variables
+## 5. Arrays and Data Structures 
+3. 5.1 Indexed Arrays 
+4. 5.2 Associative Arrays 
+5. 5.3 Iterating Over Arrays
+## 6. String Manipulation 
+3. 6.1 String Length and Substrings 
+4. 6.2 Pattern Matching 
+5. 6.3 Parameter Expansion
+## 7. Input and Output Handling 
+3. 7.1 User Input (read) 
+4. 7.2 Standard Input, Output, Error 
+5. 7.3 Redirection Operators 
+6. 7.4 Pipes and Data Flow
+## 8. Arithmetic Operations 
+3. 8.1 Integer Arithmetic 
+4. 8.2 let, (( )), and expr 
+5. 8.3 Floating Point Considerations
 
-4. Variables and Data Types 4.1 Variable Declaration and Scope 4.2 Quoting Rules 4.3 Command Substitution 4.4 Environment Variables
-5. Arrays and Data Structures 5.1 Indexed Arrays 5.2 Associative Arrays 5.3 Iterating Over Arrays
-6. String Manipulation 6.1 String Length and Substrings 6.2 Pattern Matching 6.3 Parameter Expansion
-7. Input and Output Handling 7.1 User Input (read) 7.2 Standard Input, Output, Error 7.3 Redirection Operators 7.4 Pipes and Data Flow
-8. Arithmetic Operations 8.1 Integer Arithmetic 8.2 let, (( )), and expr 8.3 Floating Point Considerations
+## **PART III — CONTROL FLOW** 
+## 9. Conditional Statements 
+9. 9.1 if, elif, else 
+10. 9.2 Test Operators 
+11. 9.3 Logical Operators
 
-**PART III — CONTROL FLOW** 9. Conditional Statements 9.1 if, elif, else 9.2 Test Operators 9.3 Logical Operators
+## 10. Loops 
+9. 10.1 for Loops 
+10. 10.2 while and until Loops 
+11. 10.3 Loop Control (break, continue)
+## 11. Functions 
+9. 11.1 Defining and Calling Functions 
+10. 11.2 Function Arguments 
+11. 11.3 Return Values and Exit Codes
 
-10. Loops 10.1 for Loops 10.2 while and until Loops 10.3 Loop Control (break, continue)
-11. Functions 11.1 Defining and Calling Functions 11.2 Function Arguments 11.3 Return Values and Exit Codes
+## **PART IV — INTERMEDIATE & ADVANCED BASH** 
+## 12. File and Directory Operations 
+12. 12.1 File Tests 
+13. 12.2 Permissions and Ownership 
+14. 12.3 Path Handling
 
-**PART IV — INTERMEDIATE & ADVANCED BASH** 12. File and Directory Operations 12.1 File Tests 12.2 Permissions and Ownership 12.3 Path Handling
+## 13. Process Management 
+12. 13.1 Process Creation and Monitoring 
+13. 13.2 Background and Foreground Jobs 
+14. 13.3 Signals and Traps
+## 14. Text Processing Tools 
+12. 14.1 grep 
+13. 14.2 awk 
+14. 14.3 sed 
+15. 14.4 Combining Tools with Pipelines
+## 15. Error Handling and Debugging 
+12. 15.1 Exit Codes and Failure Handling 
+13. 15.2 Strict Mode (set -euo pipefail) 
+14. 15.3 Debugging with set -x
 
-13. Process Management 13.1 Process Creation and Monitoring 13.2 Background and Foreground Jobs 13.3 Signals and Traps
-14. Text Processing Tools 14.1 grep 14.2 awk 14.3 sed 14.4 Combining Tools with Pipelines
-15. Error Handling and Debugging 15.1 Exit Codes and Failure Handling 15.2 Strict Mode (set -euo pipefail) 15.3 Debugging with set -x
+## **PART V — AUTOMATION & SYSTEM SCRIPTING** 
+## 16. Automation Principles 
+16. 16.1 Writing Reliable Scripts 
+17. 16.2 Idempotency and Safety
 
-**PART V — AUTOMATION & SYSTEM SCRIPTING** 16. Automation Principles 16.1 Writing Reliable Scripts 16.2 Idempotency and Safety
+## 17. Task Automation 
+16. 17.1 Cron Jobs 
+17. 17.2 Timed and Conditional Execution
+## 18. Logging and Monitoring 
+16. 18.1 Log Generation 
+17. 18.2 Log Parsing 
+18. 18.3 Alerting Basics
 
-17. Task Automation 17.1 Cron Jobs 17.2 Timed and Conditional Execution
-18. Logging and Monitoring 18.1 Log Generation 18.2 Log Parsing 18.3 Alerting Basics
+## **PART VI — SECURITY & RED TEAM BASH** 
+## 19. Bash in Offensive Security 
+19. 19.1 Enumeration Automation 
+20. 19.2 Recon Pipelines 
+21. 19.3 Payload Wrappers
 
-**PART VI — SECURITY & RED TEAM BASH** 19. Bash in Offensive Security 19.1 Enumeration Automation 19.2 Recon Pipelines 19.3 Payload Wrappers
+## 20. OPSEC Considerations 
+19. 20.1 Noise Reduction 
+20. 20.2 Temporary Files and Cleanup 
+21. 20.3 Execution Timing
+## 21. Defensive Awareness 
+19. 21.1 Detectable Bash Patterns 
+20. 21.2 Common Blue Team Indicators
 
-20. OPSEC Considerations 20.1 Noise Reduction 20.2 Temporary Files and Cleanup 20.3 Execution Timing
-21. Defensive Awareness 21.1 Detectable Bash Patterns 21.2 Common Blue Team Indicators
+## **PART VII — PRACTICAL PROJECTS** 
+## 22. Practical Bash Projects 
+22. 22.1 Log Analyzer Script 
+23. 22.2 File Integrity Monitor 
+24. 22.3 Process Watchdog 
+25. 22.4 Recon Automation Tool 
+26. 22.5 Backup and Cleanup Scripts
 
-**PART VII — PRACTICAL PROJECTS** 22. Practical Bash Projects 22.1 Log Analyzer Script 22.2 File Integrity Monitor 22.3 Process Watchdog 22.4 Recon Automation Tool 22.5 Backup and Cleanup Scripts
+## **PART VIII — COMMON MISTAKES & BEST PRACTICES** 
+## 23. Common Bash Pitfalls 
+23. 23.1 Quoting Errors 
+24. 23.2 Unsafe File Handling 
+25. 23.3 Hardcoded Paths
 
-**PART VIII — COMMON MISTAKES & BEST PRACTICES** 23. Common Bash Pitfalls 23.1 Quoting Errors 23.2 Unsafe File Handling 23.3 Hardcoded Paths
+## 24. Best Practices 
+23. 24.1 Readability and Maintainability 
+24. 24.2 Script Organization 
+25. 24.3 Performance Considerations
 
-24. Best Practices 24.1 Readability and Maintainability 24.2 Script Organization 24.3 Performance Considerations
+## **PART IX — REFERENCE** 
+## 25. Bash Cheat Sheet 
+25. 25.1 Operators 
+26. 25.2 Test Conditions 
+27. 25.3 Parameter Expansion
 
-**PART IX — REFERENCE** 25. Bash Cheat Sheet 25.1 Operators 25.2 Test Conditions 25.3 Parameter Expansion
-
-26. Final Notes 26.1 When to Use Bash 26.2 When Not to Use Bash
+## 28. Final Notes 
+25. 26.1 When to Use Bash 
+26. 26.2 When Not to Use Bash
 
 ---
 
