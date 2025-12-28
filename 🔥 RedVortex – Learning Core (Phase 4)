@@ -1,0 +1,455 @@
+🔥 RedVortex – Learning Core (Phase 4)
+
+
+---
+
+## 🧠 PREAMBLE: HOW THIS FILE IS USED (IMPORTANT)
+
+This learning core is built using **ChatGPT as a continuous mentor**, not as a one-time assistant.
+
+### Role Definition
+
+- **Learner:** RedVortex
+    
+- **Mentor Engine:** ChatGPT
+    
+
+ChatGPT is expected to:
+
+- read this file fully at the start of every new session
+    
+- treat it as the **single source of truth**
+    
+- respect locked sections
+    
+- correct partial or incorrect understanding
+    
+- continue teaching **without repeating basics**
+    
+- focus on _why systems fail_, not just _how attacks work_
+    
+
+---
+
+## 🧩 Learning Style (LOCKED)
+
+This learner:
+
+- learns **fast on hard topics**, but wants correctness over speed
+    
+- prefers **system transparency**, not mystery
+    
+- understands concepts but may be **partially wrong** at times
+    
+- wants **correction, not validation**
+    
+- dislikes noisy documentation and over-engineering
+    
+- prefers **one evolving file** over many fragmented notes
+    
+- prioritizes **depth, structure, and long-term identity**
+    
+
+Mentor behavior should match this style.
+
+---
+
+## 🧠 Continuity & Memory Model
+
+Because chat sessions reset:
+
+- **This file replaces memory**
+    
+- ChatGPT must use this file to re-load context
+    
+- Only two inputs are required in new sessions:
+    
+    1. This README
+        
+    2. Current Day number
+        
+
+If a conflict occurs between chat memory and this file,  
+👉 **this file always wins**.
+
+---
+
+## A. LEARNING PHILOSOPHY (STABLE)
+
+- Depth > speed
+    
+- Problem-first, tool-second
+    
+- Red + Blue together
+    
+- Labs > theory
+    
+- Build identity, not flex
+    
+- Documentation is for clarity, not ego
+    
+- Learn topics to **remove mystery**, not to collect tools
+    
+
+---
+
+## B. PHASE 4 DEFINITION (STABLE)
+
+**Phase:** 4 – Red Teaming  
+**Duration:** ~5 months
+
+**Primary Goal:**  
+Simulate real-world attacks from **initial access → domain dominance**, while understanding:
+
+- why defenses fail
+    
+- why alerts are missed
+    
+- why teams misjudge impact
+    
+
+**Secondary Goal:**  
+Build **thinking + explanation ability**, not just execution.
+
+---
+
+## C. DEPTH SYSTEM (STABLE)
+
+- **Depth-1 (Core):**  
+    Deep understanding + labs + explanation + GitHub artifacts
+    
+- **Depth-2 (Working Knowledge):**  
+    Hands-on + clear logic, limited optimization
+    
+- **Depth-3 (Awareness):**  
+    Conceptual understanding only (no heavy labs)
+    
+
+> Topics are **locked**.  
+> Only **depth may evolve** if reality proves otherwise.
+
+---
+
+## D. PHASE 4 TOPIC MAP (LOCKED)
+
+### 🔹 1. Initial Access Techniques
+
+#### 1.1 Phishing Attacks
+
+- Email Pretexting (HR, Resume, Fake Invoice) → **Depth-1**
+    
+- Malicious Documents (Macros – VBA, Word, Excel) → **Depth-1**
+    
+- DDE Exploits → **Depth-2**
+    
+- Embedded Payloads → **Depth-2**
+    
+- QR Phishing (Quishing) → **Depth-2**
+    
+- Evilginx2 (2FA bypass phishing) → **Depth-2**
+    
+- GoPhish Campaigns → **Depth-1**
+    
+
+#### 1.2 File-Based Payload Delivery
+
+- DLL Sideloading via Signed Binaries → **Depth-1**
+    
+- LNK File Exploits → **Depth-1**
+    
+- ISO / IMG File Droppers → **Depth-2**
+    
+- Office Template Injection → **Depth-2**
+    
+
+#### 1.3 USB & Drop Attacks
+
+- Rubber Ducky → **Depth-2**
+    
+- HID Scripts → **Depth-2**
+    
+- Teensy Payloads → **Depth-3**
+    
+- Key Injection & Self-launching Malware → **Depth-2**
+    
+
+---
+
+### 🔹 2. Privilege Escalation
+
+#### 2.1 Linux PrivEsc
+
+- SUID / SGID Misconfigs → **Depth-1**
+    
+- Writable `/etc/passwd` → **Depth-2**
+    
+- Cron Job Exploits → **Depth-1**
+    
+- Weak Service Permissions → **Depth-1**
+    
+- Kernel Exploits → **Depth-3**
+    
+
+#### 2.2 Windows PrivEsc
+
+- AlwaysInstallElevated → **Depth-2**
+    
+- Unquoted Service Paths → **Depth-1**
+    
+- Registry Permission Abuse → **Depth-1**
+    
+- Insecure Scheduled Tasks → **Depth-1**
+    
+- DLL Hijacking → **Depth-1**
+    
+- UAC Bypass (fodhelper, eventvwr, etc.) → **Depth-2**
+    
+
+#### 2.3 PrivEsc Tools (Contextual)
+
+- LinPEAS → **Depth-2**
+    
+- Linux-Exploit-Suggester → **Depth-2**
+    
+- pspy → **Depth-1**
+    
+- WinPEAS → **Depth-2**
+    
+- PowerUp → **Depth-2**
+    
+- Seatbelt → **Depth-2**
+    
+
+---
+
+### 🔹 3. Lateral Movement & Pivoting
+
+#### 3.1 Lateral Movement
+
+- WMI → **Depth-1**
+    
+- PsExec → **Depth-1**
+    
+- RDP Hijacking → **Depth-2**
+    
+- Remote Service Creation → **Depth-2**
+    
+- SMB Relay → **Depth-1**
+    
+- Pass-the-Hash → **Depth-1**
+    
+- WinRM → **Depth-2**
+    
+- DCOM Execution → **Depth-2**
+    
+
+#### 3.2 Pivoting
+
+- Chisel (SOCKS over HTTP) → **Depth-1**
+    
+- SSH Tunneling → **Depth-2**
+    
+- ProxyChains → **Depth-2**
+    
+- Internal Port Scanning via Compromised Host → **Depth-1**
+    
+
+---
+
+### 🔹 4. Active Directory (AD) Attacks
+
+#### 4.1 Enumeration
+
+- Users, Groups, Trusts, Shares → **Depth-1**
+    
+- BloodHound + SharpHound → **Depth-1**
+    
+- LDAP Queries → **Depth-2**
+    
+- Kerberos Tickets (TGT / TGS) → **Depth-1**
+    
+
+#### 4.2 Attack Techniques
+
+- Kerberoasting → **Depth-1**
+    
+- AS-REP Roasting → **Depth-1**
+    
+- Pass-the-Ticket → **Depth-2**
+    
+- Pass-the-Hash → **Depth-1**
+    
+- Golden Ticket → **Depth-3**
+    
+- Silver Ticket → **Depth-3**
+    
+- AdminSDHolder Abuse → **Depth-2**
+    
+- DCSync → **Depth-1**
+    
+
+#### 4.3 AD Tools
+
+- BloodHound → **Depth-1**
+    
+- Mimikatz → **Depth-2**
+    
+- Rubeus → **Depth-1**
+    
+- Impacket → **Depth-1**
+    
+- PowerView → **Depth-1**
+    
+
+---
+
+### 🔹 5. Command & Control (C2)
+
+#### 5.1 Frameworks
+
+- Cobalt Strike → **Depth-2**
+    
+- Mythic → **Depth-1**
+    
+- Havoc → **Depth-2**
+    
+- Covenant → **Depth-2**
+    
+
+#### 5.2 Beacon Delivery
+
+- HTTP / HTTPS → **Depth-1**
+    
+- DNS Tunneling → **Depth-2**
+    
+- Slack / Gmail API C2 → **Depth-2**
+    
+- GitHub Repo as Beacon → **Depth-1**
+    
+
+#### 5.3 Staging & Execution
+
+- Multi-stage Payloads → **Depth-1**
+    
+- Stager Obfuscation → **Depth-2**
+    
+- Memory-only Execution → **Depth-1**
+    
+- Reflective DLL Injection → **Depth-2**
+    
+
+---
+
+### 🔹 6. Red Team OPSEC
+
+#### 6.1 Evasion
+
+- AMSI Bypass → **Depth-2**
+    
+- ETW Patch → **Depth-3**
+    
+- Inline Syscalls → **Depth-3**
+    
+- Sleeping Beacons → **Depth-2**
+    
+- Parent PID Spoofing → **Depth-2**
+    
+- Sandbox Evasion → **Depth-2**
+    
+
+#### 6.2 Logs & Artifacts
+
+- Stealthy Event Log Clearing → **Depth-2**
+    
+- Timestomping → **Depth-2**
+    
+- Artifact Replacement → **Depth-2**
+    
+- WMI Persistence → **Depth-2**
+    
+
+#### 6.3 Payload Builders
+
+- Donut → **Depth-2**
+    
+- NimPackt / PEzor / ScareCrow → **Depth-2**
+    
+- Veil Framework → **Depth-3**
+    
+- Python / PowerShell / Nim Obfuscation → **Depth-2**
+    
+
+---
+
+### 🔹 7. Engagement Reporting
+
+- Phase-wise Reporting → **Depth-1**
+    
+- Evidence Collection → **Depth-1**
+    
+- Impact Analysis → **Depth-1**
+    
+- Recommendations → **Depth-1**
+    
+- Executive Summary → **Depth-1**
+    
+- Kill Chain Summary → **Depth-1**
+    
+- MITRE ATT&CK Mapping → **Depth-1**
+    
+- TTP Listing → **Depth-1**
+    
+
+---
+
+## E. CANONICAL UNDERSTANDINGS (STABLE)
+
+- Privilege Escalation = trust boundary violation
+    
+- Detection ≠ understanding
+    
+- LOLBins = intent misuse, not tools
+    
+- Red teaming = stress-testing assumptions
+    
+
+---
+
+## F. RUNNING LOG (APPEND ONLY)
+
+### Day 01 – Date
+
+Topics:
+
+- Initial Access – Phishing
+    
+
+What I did:
+
+- Studied email pretexting
+    
+- Built GoPhish lab
+    
+
+What clicked:
+
+- Context > payload
+    
+
+Confusions / Doubts:
+
+- Why some macros bypass AMSI?
+    
+- Where SOC teams misclassify phishing?
+    
+
+Open Questions:
+
+- Q1:
+    
+- Q2:
+    
+
+---
+
+### Day 02 – Date
